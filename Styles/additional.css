@@ -1,0 +1,101 @@
+/* FAQ Section Styling */
+#faq {
+    background: white;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    row-gap: 20px;
+    padding: 20px;
+}
+
+/* Individual FAQ Item Styling */
+.faq-item {
+    width: 80%;
+    min-width: 300px;
+    background: rgba(223, 248, 255, 0.808);
+    justify-self: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    font-size: 14px;
+    row-gap: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(197, 243, 255, 0.112);
+    cursor: pointer;
+}
+
+/* Arrow Styling for FAQ Items */
+.arrow {
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* Shared Styles for Title, Number, and Arrow */
+.title, .number, .arrow {
+    padding: 0;
+    margin: 0;
+}
+
+/* Number Section of FAQ Item */
+.number {
+    grid-column: 1/2;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Title Section of FAQ Item */
+.title {
+    grid-column: 2/3;
+    font-size: 18px;
+}
+
+/* Answer Paragraph Styling */
+.ans-para {
+    margin-top: 5px;
+    grid-column: 2/3;
+    color: rgba(0, 0, 0, 0.539);
+    font-weight: 600;
+    display: none;
+    /* Uncomment transition for smooth display effect */
+    /* transition: all 1s ease; */
+}
+
+/* Answer List Styling */
+.ans-list {
+    grid-column: 2/3;
+    color: rgba(0, 0, 0, 0.539);
+    font-weight: 600;
+    display: none;
+    /* Uncomment transition for smooth display effect */
+    /* transition: all 1s ease; */
+}
+
+/* Show Class to Display Hidden Elements */
+.show {
+    display: block;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-corner {
+    background: #f0f0f0;
+}
